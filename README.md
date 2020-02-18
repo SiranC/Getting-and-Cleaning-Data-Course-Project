@@ -3,6 +3,7 @@ As a course project for data science certificate, the goal of this project is to
 
 ## The Main Procedures
 1.Download the accelerometers’ data collected from the Samsung Galaxy S smartphone and unzip it. The data location is follows:
+
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 2.Read the interesting data sets. features.txt and activity_labels.txt from UCI HAR Dataset folder, the X_text.txt, y_text.txt, and subject_text.txt from text folder inside the UCI HAR Dataset folder, and the X_train.txt, y_train.txt, and subject_train.txt from train folder inside the UCI HAR Dataset folder. 
