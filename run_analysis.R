@@ -29,6 +29,8 @@ train_activities <- read.delim2('./UCI HAR Dataset/train/y_train.txt',
 train_subject <- read.delim2('./UCI HAR Dataset/train/subject_train.txt',
                              header = FALSE, 
                              sep = ' ')
+activity_labels <- read.table('./UCI HAR Dataset/activity_labels.txt',
+                               header = FALSE)
 
 ## task 1. merge the datasets together
 library(dplyr)
@@ -48,8 +50,6 @@ sub_data2 <- select(data_all, contains('std'))
 sub_data <- data.frame(data_all[,1:3],sub_data1, sub_data2)
 
 ## task 3. Uses descriptive activity names to replace the number in the data set
-activity_labels <- read.table('./UCI HAR Dataset/activity_labels.txt',
-                               header = FALSE)
 sub_data$activities <- factor(sub_data$activities,
                               labels = activity_labels[,2])
 
