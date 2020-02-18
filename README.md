@@ -1,7 +1,13 @@
 # Getting and Cleaning Data Course Project: Tidy Data Preparation
 As a course project for data science certificate, the goal of this project is to prepare a tidy data that can be used for later analysis.
 
-## The Main Procedures
+CodeBook-tidy data: describe the variables processed and exported by the run_analysis.R code, and explain the transformations I performed to clean up the data.
+
+run_analysis.R: the R code clean the data.
+
+tidy_data.txt: the final exported data in your local folder cleaned and created by the code.
+
+## The Main Procedures of the code
 1.Download the accelerometers’ data collected from the Samsung Galaxy S smartphone and unzip it. The data location is follows:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
